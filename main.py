@@ -16,6 +16,7 @@ def test_post_headers_body_json():
     resp = requests.post(url, headers=headers, data=json.dumps(payload,indent=4))       
     
     # Validate response headers and body contents, e.g. status code.
+     #Using Pytest for assertions
     assert resp.status_code == 200
     resp_body = resp.json()
     assert resp_body['url'] == url
