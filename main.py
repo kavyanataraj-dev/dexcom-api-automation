@@ -1,6 +1,7 @@
 import requests
 from urllib.parse
 import urlparse
+import json
 
 def test_post_headers_body_json():
     url = 'https://clarity.dexcom.com/'
